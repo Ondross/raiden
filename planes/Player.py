@@ -72,10 +72,7 @@ class Plane:
                 self.takeDamage()
     
     def draw(self, screen):
-        if not self.gameOver:
-            screen.blit(self.sprite, (self.x - self.size/2, self.y - self.size/2))
-        else:
-            screen.blit(planeBoomSprite, (self.x - self.size/2, self.y - self.size/2))
+        screen.blit(self.sprite, (self.x - self.size/2, self.y - self.size/2))
         self.sprite = planeSprite
 
         for b in self.bullets:
