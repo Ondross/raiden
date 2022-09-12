@@ -1,6 +1,5 @@
 from weapons.Bullet import Bullet
 from sprites import planeSprite, planeLeftSprite, planeRightSprite, planeBoomSprite
-import math
 import time
 import pygame
 
